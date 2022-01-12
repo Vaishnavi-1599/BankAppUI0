@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+ 
 </head>
 <body>
 <c:import url="header.jsp" />
@@ -24,8 +24,8 @@
     <div class="form-group">
       <label for="exampleInputEmail1" class="form-label mt-4">Name</label>
       <sf:input type="text" class="form-control" id="exampleInputEmail1" 
-      		aria-describedby="emailHelp" 
-     	 	placeholder="Enter full name" path="name"/>
+      		aria-describedby="emailHelp" path="name"
+     	 	placeholder="Enter full name" />
      	 	
       <small id="emailHelp" class="form-text text-muted">This should match with your name from Pan Card </small>
     </div>

@@ -1,5 +1,4 @@
 package com.bankui.beans;
-
 import java.util.List;
 
 import org.springframework.stereotype.Component;
