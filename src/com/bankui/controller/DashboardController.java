@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.bankui.beans.Deposit;
 import com.bankui.beans.Transfer;
 
 @Controller
@@ -12,7 +13,10 @@ public class DashboardController {
 	String path="dashboard/"; 
 	
 	@Autowired
-	private Transfer transfer; 
+	private Transfer transfer;
+	
+	@Autowired
+	private Deposit deposit;
 	
 	@RequestMapping("/dashboard")
 	public String showDashboard(Model model) {
@@ -29,6 +33,7 @@ public class DashboardController {
 	
 	@RequestMapping("/deposit")
 	public String showDepositScreen(Model model) {
+		model.addAttribute("deposit", deposit);
 		return path+"deposit";
 	}
 	
